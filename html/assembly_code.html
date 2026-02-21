@@ -1,0 +1,101 @@
+<!-- Description: this is the HTML program for the assembly code webpage. -->
+<!-- Beginning of program: -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head tag: -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Assembly Code</title>
+        <link rel="stylesheet" href="../css/coding_webpage_style.css"/>
+    </head>
+
+    <!-- Body tag: -->
+    <body>
+        <!-- Links: -->
+        <a href="home.html" target="_blank" class="link">Home | </a>
+        <a href="assembly_code.html" target="_blank" class="link">Assembly Code</a> <hr>
+
+        <!-- Welcome: -->
+        <h1 style="text-align: center" class="biggest">Assembly Code Webpage</h1> <hr>
+        <p class="sub" style="text-indent: 3em;">This is a webpage for discussing things that I found interesting about <br>
+            assembly code.</p>
+
+        <!-- Video: -->
+        <div class="video">
+            <video width="700vw" autoplay muted>
+                <source src="../video/mp4/dark_green_code1.mp4" width="70vw" type="video/mp4">
+            </video>
+        </div>
+        <p class="credits" style="margin-left: 25vw;"><b>Figure 1</b>: free use video from pixabay.</p>
+
+        <!-- Image: -->
+        <h3 style="text-align: center;">Introduction</h2>
+        <div>
+            <img src="../image/jpg/forward_white_laptop.jpg" width="500vw" style="text-align:center">
+        </div>
+        <p class="credits" style="margin-left: 25vw;"><b>Figure 2</b>: free use image from pixabay.</p>
+        
+        <!-- Discussion: -->
+        <h2>Assembly Code with RISC-V</h2>
+        <p style="text-indent: 3em;">Asssembly code is a lower level coding language that translates into machine code 
+            consisting only 1s and 0s. Moreover, assembly code is one level above machine code. Different assembly code 
+            is used for different devices. For example, x86 is used for Intel and ARM is used for macOS.</p>
+
+        <!-- List: -->
+        <h2 style="margin-left: 44vw;">Example RISC-V instructions:</h2>
+        <div class="list2">
+            <ol>
+                <li>add- ex: add t0, t0, t1 # t0 = t0 + t1</li>
+                <li>sub- ex: sub t0, t0, t1 # t0 = t0 - t1</li>
+                <li>mul- ex: mul t0, t0, t1 # t0 = t0 * t1</li>
+                <li>div- ex: div t0, t0, t1 # t0 = t0 / t1</li>
+                <li>sll- ex: sll t0, t0, 1 # t0 = t0 * 2</li>
+                <li>slr- ex: slr t0, t0, 1 # t0 = t0 / 2</li>
+                <li>slli- ex: slli t0, t0, 1 # t0 = t0 * 2</li>
+                <li>slri- ex: slri t0, t0, 1 # t0 = t0 / 2</li>
+                <li>addi- ex: add t0, t0, 1 # t0 = t0 + 1</li>
+            </ol>
+        </div>
+
+        <!-- Image: -->
+        <div>
+            <img src="../image/jpg/riscv_table.jpg" width="580vw" style="text-align:center">
+        </div>
+        <p class="credits" style="margin-left: 25vw;"><b>Figure 3</b>: Figure made in Excel.</p>
+
+        <!-- Paragraph: -->
+        <h2>Instruction Types (R, I, S, B, U, and J)</h2>
+        <p style="text-indent: 3em;">In RISC-V, there are R, I, S, B, U, and J type instructions. R type instructions 
+            are used for instructions like add, sub, or, and xor to change register values. I type instructions are 
+            used to add immediate values and to load instructions. S type instruyctions are used for store instructions. 
+            B type instructions are particularly interesting because you can use them to perform the function of 
+            a switch case, which I love using, because they can give the user a choice in the output. 
+            U type instructions involve 20 upper immediate bits (usinhg lui and auipc).
+            J type instructions are used for unconditional jumps (using j, ja, or jal).</p>
+
+        <!-- Paragraph: -->
+        <h2>Example program (Duplicator):</h2>
+        <p style="text-indent: 3em;">This is a RISC-V program that duplicates numbers from 1 to 6 with comments for clarity:</p>
+
+        <!-- Image: -->
+        <div>
+            <img src="../image/jpg/duplicator_p1.jpg" width="520vw" style="text-align:center">
+        </div>
+        <div>
+            <img src="../image/jpg/duplicator_p2.jpg" width="520vw" style="text-align:center">
+        </div>
+        <div>
+            <img src="../image/jpg/duplicator_p3.jpg" width="520vw" style="text-align:center">
+        </div>
+        <p class="credits" style="margin-left: 25vw;"><b>Figure 4</b>: RISC-V program made and tested in rars1_6.jar.</p>
+
+        <!-- Links: -->
+        <hr> <h3 style="color: black">Helpful links:<h3>
+        <p> <a href="https://www.cs.virginia.edu/~evans/cs216/guides/x86.html" style="color: rgb(86, 145, 67)" 
+            target="_blank" class="link">Guide for Assembly Code | </a>
+            <a href="https://github.com/mschwartz/assembly-tutorial" style="color: rgb(86, 145, 67)" target="_blank" 
+            class="link">GitHub for Assembly Code</a> </p> <hr>
+    </body>
+</html>
